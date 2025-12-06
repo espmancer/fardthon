@@ -13,14 +13,12 @@ Each code line is prefaced with a header:
 8. Arithmetic
 9. Print
 
-Each header has a set of tokens that cycle based on the number of "fard"s:
+Each header has a set of tokens (separated by newline) that cycle based on the number of "fard"s:
 1. Comparison Operators
-    1 - ==
-    2 - !=
+    1 - =
+    2 - !
     3 - <
-    4 - >
-    5 - <=
-    6 - >= 
+    4 - > 
 2. Boolean Operators
     1 - and
     2 - or
