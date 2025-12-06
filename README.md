@@ -3,23 +3,25 @@ Python-built maybe esolang. Only uses the word "fard". At the moment I'm only do
 NOTE: All of the actual code is generated from ChatGPT, if this wasn't a joke language I'd actually work to learn how to make a parser and such.
 
 ## Structure
-Each code line is prefaced with a header:
-1. Comparison Operators
-2. Boolean Operators
-3. Conditionals
-4. Variables
-5. ASCII
-6. Loops
-7. Numbers
-8. Arithmetic
-9. Print
+Each code line is prefaced with a header: 
+1. Comparison Operators 
+2. Boolean Operators 
+3. Conditionals 
+4. Variables 
+5. ASCII 
+6. Loops 
+7. Numbers 
+8. Arithmetic 
+9. Print 
 
-Each header has a set of tokens (separated by newline) that cycle based on the number of "fard"s:
+Each header has a set of tokens that cycle based on the number of "fard"s:
 1. Comparison Operators
-    1 - =
-    2 - !
+    1 - ==
+    2 - !=
     3 - <
-    4 - > 
+    4 - >
+    5 - <=
+    6 - >= 
 2. Boolean Operators
     1 - and
     2 - or
