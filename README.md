@@ -36,7 +36,6 @@ Each header has a set of tokens (separated by newline) that cycle based on the n
 6. Loops
     1 - While
     2 - For
-    3 - End
 7. Numbers
     The 4 letters of "fard" each represent a digit in base 4, starting from 0. This base 4 is then converted to base 10.
 8. Arithmetic Operators
