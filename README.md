@@ -11,6 +11,7 @@ Each code line is prefaced with a header:
 6. Loops
 7. Numbers
 8. Arithmetic
+9. Print
 
 Each header has a set of tokens that cycle based on the number of "fard"s:
 1. Comparison Operators
@@ -39,10 +40,39 @@ Each header has a set of tokens that cycle based on the number of "fard"s:
     2 - For
     3 - End
 7. Numbers
-    The 4 letters of "fard" each represent a digit in base 4. This base 4 is then converted to base 10.
+    The 4 letters of "fard" each represent a digit in base 4, starting from 0. This base 4 is then converted to base 10.
 8. Arithmetic Operators
     1 - +
     2 - -
     3 - *
     4 - /
     5 - ^
+9. Print
+    The line directly after this header is what gets printed.
+
+## Examples
+### Hello World
+Python
+```py
+print("Hello world!")
+```
+Fardthon
+```fard
+fardfardfardfardfardfardfardfardfard
+afrfaraaardfardfarddfrffadadarddadfrardfaraffrfa
+```
+### Fard Loop
+Python
+```py
+while 1==1:
+    print("fard")
+# End
+```
+Fardthon
+```fard
+fardfardfardfardfardfard
+fard
+    fardfardfardfardfardfardfardfardfard
+    arararfaadfraraf
+fardfardfard
+```
