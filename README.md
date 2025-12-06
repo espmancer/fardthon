@@ -36,6 +36,7 @@ Each header has a set of tokens (separated by newline) that cycle based on the n
 6. Loops
     1 - While
     2 - For
+    3 - End
 7. Numbers
     The 4 letters of "fard" each represent a digit in base 4, starting from 0. This base 4 is then converted to base 10.
 8. Arithmetic Operators
@@ -56,20 +57,50 @@ print("Hello world!")
 Fardthon
 ```fard
 fardfardfardfardfardfardfardfardfard
+fardfardfardfardfard
 afrfaraaardfardfarddfrffadadarddadfrardfaraffrfa
+```
+Breakdown
+```
+Header: Print
+    Header: ASCII
+        Base 4 to be converted to text        
 ```
 ### Fard Loop
 Python
 ```py
 while 1==1:
     print("fard")
-# End
 ```
 Fardthon
 ```fard
 fardfardfardfardfardfard
 fard
-    fardfardfardfardfardfardfardfardfard
-    arararfaadfraraf
+fard
+fardfardfardfardfardfardfard
+a
+fardfardfardfardfardfardfard
+a
+fardfardfardfardfardfardfardfardfard
+fardfardfardfardfard
+arararfaadfraraf
+fardfardfardfardfardfard
 fardfardfard
+```
+Breakdown
+```
+Header: Loops
+    Header: Boolean
+        Comparison: ==
+            Header: Numbers
+                Base 4 to be converted to number
+            Header: Numbers
+                Base 4 to be converted to number
+
+Header: Print
+    Header: ASCII
+        Base 4 to be converted to text
+
+Header: Loops
+    End     
 ```
