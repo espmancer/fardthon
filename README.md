@@ -1,5 +1,6 @@
 # fardthon
-Python-built maybe esolang. Only uses the word "fard". At the moment I'm only doing control flow.
+Python-built maybe esolang. Only uses the word "fard". At the moment I'm only doing control flow. 
+NOTE: All of the actual code is generated from ChatGPT, if this wasn't a joke language I'd actually work to learn how to make a parser and such.
 
 ## Structure
 Each code line is prefaced with a header:
