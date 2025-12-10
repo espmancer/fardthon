@@ -2,6 +2,7 @@
 # fardthon minimal interpreter — handles Print, Numbers, ASCII, Loops (while/end), Comparison (==)
 
 import sys
+from sys import argv  
 
 # helper: identify header name from a token consisting of repeated "fard"
 def header_name(token):
@@ -53,7 +54,7 @@ def decode_number_data(line):
     return int(digits, 4)
 
 # load file
-def load_tokens(path="main.fard"):
+def load_tokens(path=argv[1]):
     with open(path, "r", encoding="utf-8") as f:
         lines = [ln.rstrip("\n") for ln in f.readlines()]
     # drop blank lines
@@ -204,5 +205,5 @@ def run(tokens):
         ip += 1
 
 if __name__ == "__main__":
-    tokens = load_tokens("main.fard")
+    tokens = load_tokens(argv[1])
     run(tokens)

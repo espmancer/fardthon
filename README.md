@@ -16,7 +16,7 @@ Each code line is prefaced with a header:
 
 Each header has a set of tokens that cycle based on the number of "fard"s:
 1. Comparison Operators
-    1 - ==
+    1 - =
     2 - !=
     3 - <
     4 - >
