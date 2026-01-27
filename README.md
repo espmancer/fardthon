@@ -1,74 +1,57 @@
 # fardthon
 Python-built maybe esolang. Only uses the word "fard". At the moment I'm only doing control flow. 
-NOTE: All of the actual code is generated from ChatGPT, if this wasn't a joke language I'd actually work to learn how to make a parser and such.
 
 ## Structure
 Each code line is prefaced with a header: 
-1. Comparison Operators 
-2. Boolean Operators 
-3. Conditionals 
-4. Variables 
-5. ASCII 
-6. Loops 
-7. Numbers 
-8. Arithmetic 
-9. Print 
+f - Comparison Operators 
+a - Boolean Operators 
+r - Conditionals 
+d - Variables 
+F - ASCII 
+A - Loops 
+R - Numbers 
+D - Arithmetic 
+ff - Print 
 
-Each header has a set of tokens that cycle based on the number of "fard"s:
-1. Comparison Operators
-    1 - =
-    2 - !=
-    3 - <
-    4 - >
-    5 - <=
-    6 - >= 
-2. Boolean Operators
-    1 - and
-    2 - or
-    3 - not
-3. Conditionals
-    1 - if
-    2 - elif
-    3 - else
-4. Variables
-    1 - Define: Uses ASCII structure
-    2 - Equals: Uses Arithmetic Operators structure
-    3 - Value: Uses Numbers/ASCII structure
-5. ASCII
+Each header has a set of tokens that cycle as well:
+f - Comparison Operators
+    f - =
+    a - !=
+    r - <
+    d - >
+    F - <=
+    A - >= 
+    R - ==
+a - Boolean Operators
+    f - and
+    a - or
+    r - not
+r - Conditionals
+    f - if
+    a - elif
+    r - else
+d - Variables
+    f - Define: Uses ASCII structure
+    a - Equals: Uses Arithmetic Operators structure
+    r - Value: Uses Numbers/ASCII structure
+F - ASCII
     Uses Numbers structure and converts it to ASCII.
-6. Loops
-    1 - While
-    2 - For
-    3 - End
-7. Numbers
-    The 4 letters of "fard" each represent a digit in base 4, starting from 0. This base 4 is then converted to base 10.
-8. Arithmetic Operators
-    1 - +
-    2 - -
-    3 - *
-    4 - /
-    5 - ^
-9. Print
-    The line directly after this header is what gets printed.
+A - Loops
+    f - While
+    a - For
+    r - End
+R - Numbers
+    The 8 letters of "fardFARD" each represent a digit in base 8, starting from 0. This base 8 is then converted to base 10.
+D - Arithmetic Operators
+    f - +
+    a - -
+    r - *
+    d - /
+    F - ^
+ff - Print
+    The token after this header is what gets printed.
 
 ## Examples
-### Hello World
-Python
-```py
-print("Hello world!")
-```
-Fardthon
-```fard
-fardfardfardfardfardfardfardfardfard
-fardfardfardfardfard
-afrfaraaardfardfarddfrffadadarddadfrardfaraffrfa
-```
-Breakdown
-```
-Header: Print
-    Header: ASCII
-        Base 4 to be converted to text        
-```
 ### Fard Loop
 Python
 ```py
@@ -77,33 +60,34 @@ while 1==1:
 ```
 Fardthon
 ```fard
-fardfardfardfardfardfard
-fard
-fard
-fardfardfardfardfardfardfard
+A
+f
 a
-fardfardfardfardfardfardfard
+f
+R
 a
-fardfardfardfardfardfardfardfardfard
-fardfardfardfardfard
-arararfaadfraraf
-fardfardfardfardfardfard
-fardfardfard
+ff
+F
+aFA aFa aAr aFF
+A
+r	
 ```
 Breakdown
 ```
 Header: Loops
-    Header: Boolean
-        Comparison: ==
-            Header: Numbers
-                Base 4 to be converted to number
-            Header: Numbers
-                Base 4 to be converted to number
-
-Header: Print
-    Header: ASCII
-        Base 4 to be converted to text
-
+	While (
+    Header: Numbers
+        Base 8 to be converted to Base 10
+    Header: Comparison
+        ==
+    Header: Numbers
+        Base 8 to be converted to Base 10
+    )	
+    {
+		Header: Print
+    		Header: ASCII
+        		Base 8 to be converted to ASCII
+    }
 Header: Loops
     End     
 ```
